@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------
+# Never commit model weights, datasets, imagery or outputs.
+# They are large and some of them are private.
+# ---------------------------------------------------------------
+
+# Model checkpoints / weights
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# Raster / vector data
+*.tif
+*.tiff
+*.TIF
+*.jp2
+*.vrt
+*.img
+*.h5
+*.hdf5
+*.nc
+*.npy
+*.npz
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.geojson
+*.kml
+*.zip
+
+# Training / prediction outputs
+outputs/
+predictions/
+checkpoints/
+logs/
+lightning_logs/
+_huggingface_cache/
+data/
+datasets/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
